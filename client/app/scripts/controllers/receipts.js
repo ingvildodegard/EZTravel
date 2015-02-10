@@ -10,5 +10,9 @@
 angular.module('eztravelApp').
 	controller('ReceiptsCtrl', function ($scope, $http) {
     	$http.get("/api/receipts").success(function(response) {$scope.receipts = response;});
+    	
+    	$scope.setImage = function(receipt) {
+            $scope.mainImageUrl = receipt;
+        };
     });
 
