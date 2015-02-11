@@ -18,6 +18,10 @@ The following steps are required to locally install and test this set of service
 * `npm install -g bower`
 * `npm install -g nodemon`
 * `npm install -g grunt`
+* `mkdir data`
+
+If no MongoDb is running, you should also run the following to start MongoDb:
+* `mongod --bind_ip=localhost --dbpath=data --nojournal --rest "$@"`
 
 ## client
 
